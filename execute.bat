@@ -2,7 +2,7 @@
 setlocal enableextensions
 
 :: --- CONFIG ---
-set "URL=https://raw.githubusercontent.com/TsofnatMaman/AutoCustomBackgroundDesktop/main/script1.ps1"
+set "URL=https://raw.githubusercontent.com/Tamar-Mann/AutoCustomBackgroundDesktop/main/script1.ps1"
 set "PSSCRIPT=%APPDATA%\Microsoft\Windows\script1.ps1"
 set "VBS=%TEMP%\run_wallpaper_elevated.vbs"
 if not exist "%APPDATA%\Microsoft\Windows" mkdir "%APPDATA%\Microsoft\Windows" >nul 2>&1
