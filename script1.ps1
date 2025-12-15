@@ -190,7 +190,7 @@ sh.Run "powershell -NoProfile -ExecutionPolicy Bypass -File ""$ScriptPath""", 0,
     Set-Content -Path $VbsPath -Value $vbs -Encoding ASCII
 }
 
-# --- Script path fallback (when run manually) ---
+# ---  Script path fallback (when run manually) ---
 $scriptPath = Get-ScriptPath
 
 # --- Remote sources (for your reference; not used at runtime) ---
@@ -226,5 +226,8 @@ $dailyTime = "00:30"
 $vbsPath = "$env:APPDATA\Microsoft\Windows\run_wallpaper_silent.vbs"
 Set-VbsLauncher -ScriptPath $scriptPath -VbsPath $vbsPath
 Register-DailyTask -TaskName $taskName -VbsPath $vbsPath -DailyTime $dailyTime
+
+
+
 
 Write-Host "Done. Final image: $finalImagePath"
